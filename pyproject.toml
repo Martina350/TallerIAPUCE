@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "taller-busqueda"
+version = "0.1.0"
+description = "Taller de algoritmos de búsqueda BFS, DFS y A*"
+requires-python = ">=3.10"
+dependencies = [
+    "pytest>=8.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*", "taller*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
